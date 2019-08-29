@@ -22,7 +22,8 @@ jobs:
 
     steps:
       - checkout
-
+      - run: echo "Code checkout completed"
+      
       # Download and cache dependencies
       - restore_cache:
           keys:
