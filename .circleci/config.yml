@@ -4,7 +4,14 @@
 #
 version: 2
 jobs:
-  build:
+  buildone:
+    docker:
+      # specify the version you desire here
+      - image: circleci/openjdk:8-jdk
+    steps:
+      - run: echo "Build One started..."
+      - run: pwd
+  buildtwo:
     docker:
       # specify the version you desire here
       - image: circleci/openjdk:8-jdk
