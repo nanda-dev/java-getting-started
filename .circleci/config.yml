@@ -9,7 +9,7 @@ workflows:
   one_and_two:
     jobs:
       - buildone
-      - buildtwo
+      #- buildtwo
 
 jobs:
   buildone:
@@ -19,6 +19,7 @@ jobs:
     steps:
       - run: echo "Build One started..."
       - run: pwd
+      - run: ls ~
   buildtwo:
     docker:
       # specify the version you desire here
